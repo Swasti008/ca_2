@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Audiowide&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: url(./assets/game\ over) 0 0;
+    height: 47vw;
+    width: 70vw; 
+    background-size: 100% 100%;
+    font-family: Audiowide;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+#elements{
+    display: flex;
+    position: relative;
+    top: 2vw;
+    left: 5vw;
+}
+#elements img{
+    flex-direction: row;
+    margin-left: 1vw;
+}
+#box{
+    position: relative;
+    top: 2vw;
+    left: 33vw;
+    height: 23vw;
+    width: 30vw;
+    border-radius: 3em;
+}
+#scoreContainer{
+  position:relative;
+  top: 3vw;  
+  left: 31vw;
+  width: 30vw;
+  display: flex;
+  width: 20vw;
+}
+#score{
+  flex-direction: row;
+  text-align: center;
+  color: rgb(253, 56, 21);
+  border: none;
+  border-radius: 1vw;
+  background-color: rgba(223, 226, 31, 1);
+  font-size: 3vw;
+  margin-left:3vw;
+  margin-right: 3vw;
+  width: 46vw;
+  animation: floating 3s  infinite;
+}
+#result1{
+    flex-direction: row;
+    text-align: center;
+    color: rgb(253, 56, 21);
+    border: none;
+    border-radius: 1vw;
+    background-color: rgba(223, 226, 31, 1);
+    font-size: 3vw;
+    height:6vw;
+    animation: floating 3s  infinite;
+  }
+#result2{
+    flex-direction: row;
+    text-align: center;
+    color: rgb(253, 56, 21);
+    border: none;
+    border-radius: 1vw;
+    background-color: rgba(223, 226, 31, 1);
+    font-size: 3vw;
+    height:6vw;
+    animation: floating 3s  infinite;
+  }
+#home:hover{
+    box-shadow: 2px 2px 2px 2px  white;
+}
+#user:hover{
+    box-shadow: 2px 2px 2px 2px  white;
+}
+#aboutIcon:hover{
+    box-shadow: 2px 2px 2px 2px  white;
+}
+#playAgain{
+    position:fixed;
+    top: 38vw;  
+    left: 85vw;
+    height: 5.5vw;
+    width: 9vw;
+    background-color: rgba(224, 224, 215, 0.144);
+    border: 5px solid white;
+    border-radius: 0.8em;
+    font-size: 1.5vw;
+    color: rgb(255, 253, 253);
+    animation: floating 3s  infinite;
+}
+@keyframes floating {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+#playAgain:hover{
+    background-color: rgba(9, 126, 126, 0.74);
+}
+#about,#madeBy{
+    position:relative;
+    top: 10vw;
+    z-index: 7;
+    color: rgb(255, 38, 0);
+    height: 1vw;
+    text-align: center;
+    border-radius: 3em;
+}
+#madeBy{
+    position: fixed;
+    top: 8vw;
+    left: 4vw;
+}
+#Message{
+    position: fixed;
+    left: 35vw;
+    top:2vw;
+    font-size: 4vw;
+    z-index: 3;
+    border-radius: 3em;
+    color: yellow;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #cfe600, 0 0 40px #e2e600, 0 0 50px #e69600, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff34d, 0 0 40px #ffed4d, 0 0 50px #fffc4d, 0 0 60px #ffe44d, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+@media (max-width:1024px){
+    #box{
+        position: relative;
+        top: 30vw;
+        left: 33vw;
+        height: 23vw;
+        width: 30vw;
+        border-radius: 3em;
+    }
+    #scoreContainer{
+        position:relative;
+        top: 37vw;  
+        left: 28vw;
+        width: 30vw;
+        display: flex;
+        width: 20vw;
+      }
+}

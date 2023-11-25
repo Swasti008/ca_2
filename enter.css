@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Audiowide&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./assets/spacebackmain-transformed.svg) 0 0;
+    height: 49vw;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Audiowide;
+    cursor: url('./assets/cursor.png'), auto;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    /* transition: transform 0.5s ease; */
+}
+
+#blur {
+    position: relative;
+    top: 5vw;
+    left: 17vw;
+    width: 65vw;
+    height: 35vw;
+    background-color: rgba(23, 140, 243, 0.904);
+    border-radius: 5em;
+    box-shadow: 2vw 2vw 2vw rgba(255, 255, 255, 0.904);
+}
+
+form {
+    position: relative;
+    left: 5vw;
+    top: 3vw;
+    color: white;
+    font-size: 2vw;
+    text-shadow: 0.2vw 0.2vw rgba(0, 217, 255, 0.466);
+}
+
+#Nname1,
+#Nname2 {
+    height: 2vw;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    padding: 0.8vw;
+    display: inline;
+    margin: 0.5vw;
+    font-size: 1.5vw;
+    border: 0.2vw solid rgba(0, 225, 255, 0.637);
+}
+
+#fname1,
+#fname2 {
+    position: relative;
+    left: 14vw;
+    height: 2vw;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    padding: 0.8vw;
+    display: inline;
+    margin: 0.5vw;
+    font-size: 1.5vw;
+    border: 0.2vw solid rgba(0, 255, 85, 0.637);
+}
+
+
+#start {
+    position: absolute;
+    top: 23vw;
+    left: 40vw;
+    width: 10vw;
+    height: 10vw;
+}
+
+@media (max-width:1024px) {
+    body {
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    #blur {
+        position: relative;
+        top: 5vw;
+        left: 4.5vw;
+        width: 90vw;
+        height: 45vw;
+    }
+
+    form {
+        position: relative;
+        left: 10vw;
+        top: 4vw;
+        color: white;
+        font-size: 2vw;
+    }
+
+    #Nname1,
+    #Nname2 {
+        border-top-right-radius: 2em;
+        border-bottom-left-radius: 2em;
+        height: 2vw;
+        font-size: 2vw;
+        border: 0.2vw solid rgba(0, 225, 255, 0.637);
+    }
+
+    #fname1,
+    #fname2 {
+        position: relative;
+        left: 14vw;
+        height: 2vw;
+        font-size: 2vw;
+    }
+
+    #start {
+        position: relative;
+        top: 0vw;
+        left: 50vw;
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+@media(max-width:360px) {
+    body {
+        background-size: cover;
+    }
+}
